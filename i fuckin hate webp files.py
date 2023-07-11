@@ -5,7 +5,7 @@ import win32clipboard
 import pillow_avif
 from PIL import ImageGrab, Image
 
-input("press enter for conversion")
+#input("press enter for conversion")
 
 try:
     im = ImageGrab.grabclipboard()
@@ -23,6 +23,6 @@ try:
     win32clipboard.SetClipboardData(win32clipboard.CF_DIB, data)
     win32clipboard.CloseClipboard()
 
-    input("ez")
+    #input("ez")
 except AttributeError:
     input("not ez: no image in clipboard")
